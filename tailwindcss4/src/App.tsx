@@ -24,7 +24,7 @@ function App() {
         {`
         
 
-          body {
+         html, body {
 
            overflow-x: hidden;
 

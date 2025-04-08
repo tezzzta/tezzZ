@@ -40,10 +40,9 @@
   }
   
   /* 📱 Responsive para celular */
-  @media (max-width: 368px) {
+  @media (max-width: 988px) {
     .backg {
       padding-left: 6%;       /* Menos espacio a los lados */
-      padding-right: 12%;
       width: 100%;           /* Que ocupe toda la pantalla */
     }
   
