@@ -1,0 +1,121 @@
+.back {
+  margin-top: 100px;
+  padding-left: 38vh;
+  padding-right: 20px;
+
+}
+
+.fondo {
+  background: #272525;
+  height: 210px;
+  width: 110%;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  overflow: hidden;
+  border-radius: 2%;
+}
+
+.projectImage {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--background-light);
+  cursor: pointer;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.image {
+  width: 100%;
+  max-width: 400px; /* O el tamaño que quieras */
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover; /* Esto mantiene el aspecto bonito si recortas */
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.image:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+.projects_title__J6lF1 {
+  margin-bottom: 10px;
+  align-items: center;
+  gap: 1.2rem;
+  color: white;
+}
+
+.projects_subtitle__2c1g0 {
+  font-size: 18px;
+  color: purple;
+}
+
+.projectsdescriptionW9r7B {
+  font-size: 15px;
+  color: rgb(182, 182, 182);
+  white-space: normal;
+  word-wrap: break-word;
+  line-height: 1.6;
+  max-width: 350px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.TitleContainer {
+  color: white;
+  font-weight: 750;
+  display: flex;
+  margin-top: 65px;
+  padding-left: 52%;
+}
+
+/* 📱 Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .back {
+    padding-left: 5%;
+    background: #111111;
+    padding-right: 5px;
+
+
+  }
+
+  .fondo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .projectsdescriptionW9r7B {
+    max-width: 90%;
+    font-size: 14px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .TitleContainer {
+    padding-left: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .projectImage {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .image {
+    max-height: 250px;
+  }
+}

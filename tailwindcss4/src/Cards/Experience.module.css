@@ -1,0 +1,130 @@
+.sectionWrapper {
+    padding: 40px;
+    background-color: #0a0a0a;
+    color: white;
+  }
+  
+  .sectionHeader {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .line {
+    flex: 1;
+    height: 1px;
+    background-color: var(--brand);
+  }
+  
+  .animatedWrapper {
+    position: relative;
+    width: fit-content;
+    overflow: hidden;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .reveal {
+    position: absolute;
+    inset: 4px 0 4px 100%;
+    background: var(--brand);
+    z-index: 20;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .experience {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .company {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  
+  .position {
+    font-weight: bold;
+    color: purple;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .tech {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .chip {
+    padding: 4px 10px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    color: rgb(170, 170, 170);
+    border: 1px solid var(--brand);
+  }
+  
+  
+  /* 📱 Responsive para móviles */
+  @media (max-width: 768px) {
+    .sectionWrapper {
+      padding: 20px;
+    }
+  
+    .sectionHeader {
+      flex-direction: column-reverse;
+      gap: 6px;
+      text-align: center;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+    }
+  
+    .company {
+      font-size: 1.2rem;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .position {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .description {
+      font-size: 0.95rem;
+      text-align: justify;
+    }
+  
+    .tech {
+      justify-content: center;
+    }
+  
+    .heading {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  

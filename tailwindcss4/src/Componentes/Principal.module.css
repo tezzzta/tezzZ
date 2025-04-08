@@ -1,0 +1,31 @@
+.background {
+    background: linear-gradient(#34164d, #111111);
+    height: 100vh;
+    width:100%;
+    display: flex;
+}
+
+
+.eldiv {
+    text-align: center;
+    align-items: center;
+    margin-top: 80vh;
+    margin-left: 36%;
+    margin-right: 15%;
+  }
+  
+  /* Para pantallas menores o iguales a 768px (móviles/tablets) */
+  @media (max-width: 768px) {
+    .eldiv {
+      margin-left: 6%;
+      margin-right: 6%; /* también puedes ajustar este si quieres */
+    }
+  }
+  
+.snt{
+    font-family: 'Lobster', sans-serif;
+    font-size: 20px ;
+    /* font-weight: bold ; */
+    color: darkgray;
+    text-align: center;    
+}

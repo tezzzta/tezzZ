@@ -1,0 +1,15 @@
+.backg {
+    background: #111111;
+    display: flex;
+}
+
+.snt {
+    background: #111111;
+    font-family: 'Lobster', sans-serif;
+    font-size: 5rem;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 100px;
+}

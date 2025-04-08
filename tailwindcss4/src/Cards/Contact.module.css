@@ -1,0 +1,79 @@
+.background {
+    display: flex;
+    height: 50vh;
+    background: #111;
+    padding-left: 32%;
+  }
+  
+  .texto {
+    color: white;
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.6;
+    max-width: 650px;
+  }
+  
+  .h1 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    color: purple;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .pablo {
+    font-family: 'Lobster', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .yunikua {
+    font-family: 'Lobster', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid var(--brand, white);
+    padding-bottom: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .yunikua:hover {
+    border-color: #694fff;
+  }
+  
+  
+  /* 📱 Responsive para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .background {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+      padding: 2rem 1rem;
+      height: auto;
+      text-align: center;
+    }
+  
+    .texto {
+      max-width: 100%;
+      text-align: center;
+      padding: 0 1rem;
+    }
+  
+    .h1 {
+      font-size: 2.5rem;
+    }
+  
+    .pablo,
+    .yunikua {
+      font-size: 1.2rem;
+    }
+  }
+  
