@@ -1,4 +1,3 @@
-import { useEffect, useState,useRef } from "react"
 import styles from "./U.module.css"
 import {motion} from "framer-motion"
 import Buffon from "../Cards/Buffon"
