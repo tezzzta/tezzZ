@@ -1,9 +1,12 @@
 .sectionWrapper {
-    padding: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
     background-color: #0a0a0a;
     color: white;
   }
   
+
+
   .sectionHeader {
     display: flex;
     flex-direction: row-reverse;
@@ -41,7 +44,7 @@
   }
   
   .experience {
-    margin-top: 40px;
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -59,11 +62,22 @@
     font-weight: bold;
   }
   
-  .position {
-    font-weight: bold;
-    color: purple;
+
+  .position{
+    background: linear-gradient(90deg, #ff0000,#ff00f3,#0033ff,#ff00c4, #ff0000 );
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 8s linear infinite;
   }
-  
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
   .description {
     font-size: 1rem;
     line-height: 1.6;
@@ -110,6 +124,7 @@
     .position {
       text-align: center;
       width: 100%;
+
     }
   
     .description {
@@ -128,3 +143,17 @@
     }
   }
   
+.sectionGlob{
+  padding-top: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+
+  background-color: #0a0a0a;
+    color: white;
+   
+}
+.sectionGlob:hover {
+  background-color: #161616;
+  transition: background-color 0.4s ease-in-out;
+}

@@ -44,9 +44,9 @@ const useIsVisible = (options?: IntersectionObserverInit) => {
       >
         {isVisible ? (
           <motion.div
-            initial={{ opacity: 0, y: 0}} // Inicialmente invisible
-            animate={{ opacity: 1, y: ["7px", "-15px", "-1px"] }} // Cambia la opacidad cuando es visible
-            transition={{ duration: 1, delay: 5 }} // Duración de la animación
+            initial={{ opacity: 0, y: 0}}
+            animate={{ opacity: 1, y: ["7px", "-15px", "-1px"] }} 
+            transition={{ duration: 1, delay: 5 }} 
           >
             <div className={styles.snt}>
               <h2> Sigue bajando para ver más </h2>

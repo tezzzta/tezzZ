@@ -1,9 +1,9 @@
 import styles from "./Contact.module.css"
-
+import Buffon from "./Buffon";
 const FirstCard = () => {
     return(
         <div className={styles.texto}>
-            <h1 className={styles.h1}>
+            <h1 className={styles.ryan}>
                 Contacto
             </h1>
             <p className={styles.pablo}> ¡Envíame un email si quieres conectar conmigo! Tambien puedes encontrarme en LinkedIn y contactarme mucho más rápido</p>
@@ -18,7 +18,12 @@ const ContactMe = () => {
         <div >
             <div className={styles.background}>
                 <FirstCard/>
+                
+                
             </div>
+            <div className="bg-[#111111] display flex justify-center items-center h-screen mt-10 ">
+                <Buffon/>
+                </div>
         </div>
     )
 }

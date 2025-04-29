@@ -1,6 +1,6 @@
 .background {
     display: flex;
-    height: 50vh;
+    height: 30vh;
     background: #111;
     padding-left: 32%;
   }
@@ -49,6 +49,28 @@
     border-color: #694fff;
   }
   
+  .ryan{
+    font-family: 'Lobster', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ff0000,#ff00f3,#0033ff,#ff00c4, #ff0000 );
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 8s linear infinite;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+
   
   /* 📱 Responsive para pantallas pequeñas */
   @media (max-width: 768px) {

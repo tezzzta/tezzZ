@@ -22,7 +22,8 @@ const experiences = [
 
 export default function Thor() {
   return (
-    <section className={styles.sectionWrapper} id="experience">
+    <div>
+      <section className={styles.sectionWrapper} id="experience">
       <div className={styles.sectionHeader}>
         <div className={styles.line}></div>
         <h3>
@@ -32,8 +33,11 @@ export default function Thor() {
           </div>
         </h3>
       </div>
+      </section>
 
       {experiences.map((exp, idx) => (
+              <section className={styles.sectionGlob} id="experience">
+
         <div key={idx} className={styles.experience}>
           <div className={styles.heading}>
             <div className={styles.animatedWrapper}>
@@ -73,7 +77,9 @@ export default function Thor() {
             <div className={styles.reveal}></div>
           </div>
         </div>
+        </section>
+
       ))}
-    </section>
+    </div>
   );
 }
