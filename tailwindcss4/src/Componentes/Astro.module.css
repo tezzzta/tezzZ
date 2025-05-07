@@ -13,14 +13,14 @@
       transform: translateY(600px);
     }
   }
-  @media (max-width: 768px) {
-    .starposition1 { left: 10%; }
-    .starposition2 { left: 20%; }
-    .starposition3 { left: 10%; }
-    .starposition4 { left: 30%; }
-    .starposition5 { left: 20%; }
-    .starposition6 { left: 35%; }
-    .starposition7 { left: 30%; }
+  @media (max-width: 868px) {
+    .starposition1 { left: 1%; }
+    .starposition2 { left: 2%; }
+    .starposition3 { left: 1%; }
+    .starposition4 { left: 1%; }
+    .starposition5 { left: 1%; }
+    .starposition6 { left: 5%; }
+    .starposition7 { left: 4%; }
 
     @keyframes snow {
       0% {
@@ -141,7 +141,7 @@
   
   .starposition6 {
     top: 90px;
-    left: 85%;
+    left: 84%;
   }
   
   .starposition7 {
