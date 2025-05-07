@@ -11,6 +11,7 @@ const Astro = () => {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 1.5, delay: 0.25 }}
+    className="overflow-hidden"
     >
     <div className={styles.boxofstar1}>
     <div className={`${styles.star} ${styles.starposition1}`}></div>
