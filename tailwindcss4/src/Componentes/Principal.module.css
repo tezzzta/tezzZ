@@ -1,7 +1,7 @@
 .background {
     background: linear-gradient(#34164d, #111111);
     height: 100vh;
-
+    width: 100%;
     display: flex;
 }
 
@@ -11,7 +11,7 @@
     align-items: center;
     margin-top: 80vh;
     margin-left: 36%;
-    margin-right: 15%;
+    margin-right: 30%;
     width: 100%;
   }
   
