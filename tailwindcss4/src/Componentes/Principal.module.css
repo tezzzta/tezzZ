@@ -4,7 +4,14 @@
     width: 100%;
     display: flex;
 }
-
+  @media (max-width: 768px) {
+    .background {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+    }
+    
+  }
 
 .eldiv {
     text-align: center;
@@ -26,7 +33,7 @@
 .snt{
     font-family: 'Lobster', sans-serif;
     font-size: 20px ;
-    /* font-weight: bold ; */
+    /* font-weight: bold ; */ 
     color: darkgray;
     text-align: center;    
 }
