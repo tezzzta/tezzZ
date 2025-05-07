@@ -13,30 +13,7 @@
       transform: translateY(600px);
     }
   }
-  @media (max-width: 868px) {
-    .starposition1 { left: 1%; }
-    .starposition2 { left: 2%; }
-    .starposition3 { left: 1%; }
-    .starposition4 { left: 1%; }
-    .starposition5 { left: 1%; }
-    .starposition6 { left: 5%; }
-    .starposition7 { left: 4%; }
-
-    @keyframes snow {
-      0% {
-        opacity: 0;
-        transform: translateY(0px);
-      }
-  
-      20% {
-        opacity: 1;
-      }
-  
-      100% {
-        opacity: 1;
-        transform: translateY(500px); /* menor en móviles */
-      }
-    }}
+ 
   
   
   @keyframes astronaut {
@@ -48,7 +25,26 @@
       transform: rotate(360deg);
     }
   }
+  @media (max-width: 868px) 
+  {
+    .starposition1 { left: 1%; }
+    .starposition2 { left: 2%; }
+    .starposition3 { left: 1%; }
+    .starposition4 { left: 1%; }
+    .starposition5 { left: 1%; }
+    .starposition6 { left: 5%; }
+    .starposition7 { left: 4%; }
   
+    /* Aquí cambiamos la animación en móviles */
+    .boxofstar1,
+    .boxofstar2,
+    .boxofstar3,
+    .boxofstar4 {
+      position: relative;
+      overflow: hidden;
+      animation-name: snow-mobile;
+    }
+  }
   .boxofstar1,
   .boxofstar2,
   .boxofstar3,
