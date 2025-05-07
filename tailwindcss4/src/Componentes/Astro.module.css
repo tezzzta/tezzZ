@@ -16,11 +16,11 @@
   @media (max-width: 768px) {
     .starposition1 { left: 10%; }
     .starposition2 { left: 20%; }
-    .starposition3 { left: 40%; }
-    .starposition4 { left: 50%; }
-    .starposition5 { left: 40%; }
+    .starposition3 { left: 10%; }
+    .starposition4 { left: 30%; }
+    .starposition5 { left: 20%; }
     .starposition6 { left: 35%; }
-    .starposition7 { left: 60%; }
+    .starposition7 { left: 30%; }
 
     @keyframes snow {
       0% {
