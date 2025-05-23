@@ -30,7 +30,7 @@ const Buffon: React.FC = () => {
     switch (iK) {
       case "linkedin":
         return (
-          <svg viewBox="0 0 24 24" height={24} width={24} xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 24 24" height={24} width={24} xmlns="http://www.w3.org/2000/svg" >
             <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"  />
        
           </svg>
@@ -82,11 +82,17 @@ const StyledWrapper = styled.div`
     font-family: 'Titillium Web', sans-serif;
     color: #333;
     border-radius: 10px;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.1);
     background: darkpurple;
     margin: 5px;
     transition: 0.3s;
     justify-content: center;
+    border: 2px solid #111111;
+  }
+
+  .social-btn:hover{
+    border-color: #ffffff;
+    box-shadow: 0px 1px 1px #ffffff;
   }
 
   .social-btn svg {
@@ -117,11 +123,13 @@ const StyledWrapper = styled.div`
   }
 
   #linkedin svg {
-    fill: #0e76a8;
+    fill:rgb(167, 167, 167);
   }
 
   #github {
-    fill: #333;
+    fill: rgb(167, 167, 167);
   }`;
 
 export default Buffon;
+
+

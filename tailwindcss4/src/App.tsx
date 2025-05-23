@@ -25,6 +25,7 @@ function App() {
         
 
          html, body {
+          background-color: #111;
 
            overflow-x: hidden;
 

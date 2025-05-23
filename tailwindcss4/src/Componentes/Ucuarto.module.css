@@ -1,35 +1,35 @@
 .backg {
     background: #111111;
-    display: flex; /* Activa flexbox */
-    flex-direction: column; /* Elementos en columna */
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra horizontalmente */
-    height: 100vh; /* Ocupa toda la pantalla */
-    text-align: center; /* Centra el texto */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    text-align: center; 
 }
 
 .snt {
     font-family: 'Lobster', sans-serif;
     font-size: 4rem;
-    font-weight: 750; /* O prueba 900 para máximo grosor */
+    font-weight: 750; 
     color: white;
     margin-bottom: 10px;
     text-align: center;
-    width: 100%; /* Ocupa todo el ancho disponible */
+    width: 100%; 
 }
 
 .h3 {
     font-family: 'Lobster', sans-serif;
     font-size: 2rem;
     color: white;
-    margin-top: 0; /* Elimina espacios extra */
+    margin-top: 0; 
 }
 
 
 @media (max-width: 768px) {
   .backg{
-    height: 100%; /* Ocupa toda la pantalla */
-    text-align: center; /* Centra el texto */
+    height: 100%; 
+    text-align: center; 
     padding-bottom: 100px;
     padding-top: 100px;
   }

@@ -21,7 +21,7 @@ const ContactMe = () => {
                 
                 
             </div>
-            <div className="bg-[#111111] display flex justify-center items-center h-screen mt-10 ">
+            <div className="bg-[#111111] display grid justify-center items-center h-screen mt-10">
                 <Buffon/>
                 </div>
         </div>
