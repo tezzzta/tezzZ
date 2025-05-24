@@ -1,29 +1,28 @@
-.background{
-    display: flex;
-    height: 100vh;
-    background: #111;
+.background {
+  display: flex;
+  height: 100vh;
+  background: #111;
+  flex-wrap: wrap; /* Esto ayuda si en pantallas pequeñas quieres que se acomoden uno debajo del otro */
 }
 
-
 .leftSection {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: transparent; /* O añade un color si quieres */
-    padding-right: 50px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 50px;
+  min-width: 300px; /* Añade un mínimo para evitar que colapse en pantallas pequeñas */
+}
 
-  }
-  
-  .rightSection {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
-    color: white;
-    background: transparent;
-  }
+.rightSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+  min-width: 300px;
+}
 
   .gokuImage {
     position: relative;

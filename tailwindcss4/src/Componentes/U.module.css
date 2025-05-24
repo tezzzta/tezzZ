@@ -30,6 +30,12 @@
     position: relative;
   }
   
+
+
+
+
+
+  
   .ploploplo {
     font-family: 'Lobster', sans-serif;
     font-size: 1.2rem;
@@ -68,6 +74,7 @@
   .ryan{
     background: linear-gradient(90deg, #ff0000,#ff00f3,#0033ff,#ff00c4, #ff0000 );
     background-size: 400%;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: animate 8s linear infinite;
@@ -75,7 +82,7 @@
   @keyframes animate {
     0% {
       background-position: 0%;
-    }
+    } 
     100% {
       background-position: 100%;
     }

@@ -4,8 +4,8 @@ import styles from "./CardtoYoda.module.css";
 
 const CardYoda = () => {
     return (
-        <div className={styles.background}>
-            <div className={styles.rightSection}>      
+        <section className={styles.background}>
+            <div   className={styles.rightSection}>       
                        <Cuarto />        
             </div>      
             
@@ -14,7 +14,7 @@ const CardYoda = () => {
             <img src="/TezzLogo.jpeg" alt="Goku" className={styles.gokuImage} />
 
             </div>
-                    </div>
+                    </section>
     );
 }
 

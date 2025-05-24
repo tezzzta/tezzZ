@@ -19,10 +19,10 @@ const Gallery: React.FC = () => {
     <Container className={`album py-5 ${styles.galleryContainer} gallery-section m-20`}>
       <Row className="g-3 justify-content-center">
         {randomCards.map((card: CardData) => (
-          <Col key={card.id} sm={2} md={3}> 
+          <Col key={card.id} sm={5} md={4}> 
             <div className={styles.cardBox}>
               <div className={styles.card}>
-              <img src={card.img} alt={card.title} className={styles.cardImg} />
+              <img src={card.img} alt={card.title} className={styles.cardImg}   style={{ color: 'blue' }} />
 
                 <h4>{card.title}</h4>
                 <div className={styles.content}>
@@ -38,5 +38,11 @@ const Gallery: React.FC = () => {
     </div>
   );
 };
+
+
+
+
+
+
 
 export default Gallery;

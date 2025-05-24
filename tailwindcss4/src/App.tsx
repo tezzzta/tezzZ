@@ -26,8 +26,8 @@ function App() {
 
          html, body {
           background-color: #111;
-
-           overflow-x: hidden;
+          scroll-behavior: smooth;
+          overflow-x: hidden;
 
             }
         `}

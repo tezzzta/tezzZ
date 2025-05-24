@@ -49,8 +49,8 @@ const useIsVisible = (options?: IntersectionObserverInit) => {
             transition={{ duration: 1, delay: 5 }} 
           >
             <div className={styles.snt}>
-              <h2> Sigue bajando para ver más </h2>
-              <div className="text-4xl">▼</div>
+              <p> Sigue bajando para ver más </p>
+              <p className="text-4xl no-underline" >▼</p>
   
             </div>
           </motion.div>

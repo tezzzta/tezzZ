@@ -187,9 +187,13 @@
     position: absolute;
     top: calc(50% - 25px);
     left: calc(50% - 30px);
-    background: -webkit-linear-gradient(top, #15aece 0%, #15aece 50%, #0391bf 50%, #0391bf 100%);
     border-radius: 15px;
+
+    background: linear-gradient(270deg, #51005c, #780585, #4b0750, #53074e);
+    background-size: 800% 800%;
+    animation: gradientAnimation 5s ease infinite;
   }
+  
   
   .head:before {
     content: "";
@@ -198,9 +202,9 @@
     position: absolute;
     top: calc(50% - 12.5px);
     left: -4px;
-    background-color: #618095;
+    background-color: #9b00af;
     border-radius: 5px;
-    box-shadow: 92px 0px 0px #618095;
+    box-shadow: 92px 0px 0px #9b00af;
   }
   
   .body {
@@ -221,7 +225,7 @@
     position: absolute;
     top: 20px;
     left: calc(50% - 30px);
-    background-color: #b7cceb;
+    background-color: #9b00af;
   }
   
   .panel:before {
@@ -231,8 +235,8 @@
     position: absolute;
     top: 9px;
     left: 7px;
-    background-color: #fbfdfa;
-    box-shadow: 0px 9px 0px #fbfdfa, 0px 18px 0px #fbfdfa;
+    background-color: #f03cf7;
+    box-shadow: 0px 9px 0px #f03cf7, 0px 18px 0px #f03cf7;
   }
   
   .panel:after {
@@ -242,9 +246,9 @@
     position: absolute;
     top: 9px;
     right: 7px;
-    background-color: #fbfdfa;
+    background-color: #f03cf7;
     border-radius: 50%;
-    box-shadow: 0px 14px 0px 2px #fbfdfa;
+    box-shadow: 0px 14px 0px 2px #f03cf7;
   }
   
   .arm {
@@ -298,13 +302,13 @@
   }
   
   .armleft:after {
-    background-color: #6e91a4;
+    background-color: #9b00af ;
     left: 0;
   }
   
   .armright:after {
     right: 0;
-    background-color: #b6d2e0;
+    background-color: #9b00af;
   }
   
   .leg {
@@ -340,13 +344,24 @@
     left: -20px;
     background-color: #e3e8eb;
     border-radius: 30px 0 0 0;
-    border-bottom: 10px solid #6d96ac;
+    border-bottom: 10px solid #9b00af;
   }
   
   .legright:before {
     right: -20px;
     background-color: #fbfdfa;
     border-radius: 0 30px 0 0;
-    border-bottom: 10px solid #b0cfe4;
+    border-bottom: 10px solid #9b00af;
   }
 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

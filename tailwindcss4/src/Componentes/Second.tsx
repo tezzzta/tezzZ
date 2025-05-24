@@ -11,8 +11,9 @@ const Second = () => {
   <div className={styles.backg}>
         </div>
     
+       <section > 
         <CardYoda/>
-        
+        </section>
 
         <Tercero/>
         

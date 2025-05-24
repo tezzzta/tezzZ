@@ -17,17 +17,14 @@
     text-align: center;
     align-items: center;
     margin-top: 80vh;
-    margin-left: 36%;
-    margin-right: 30%;
+    /* margin-left: 36%;
+    margin-right: 30%; */
     width: 100%;
   }
   
   /* Para pantallas menores o iguales a 768px (móviles/tablets) */
   @media (max-width: 768px) {
-    .eldiv {
-      margin-left: 6%;
-      margin-right: 6%; /* también puedes ajustar este si quieres */
-    }
+    
   }
   
 .snt{
