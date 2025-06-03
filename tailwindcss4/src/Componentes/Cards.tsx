@@ -14,7 +14,12 @@ const Gallery: React.FC = () => {
 
   return ( // 👈 ESTO FALTABA
     <div className={styles.first}>
-      <Marquee>
+      <Marquee
+      speed={60}
+      direction="right"
+      pauseOnHover={true}
+      gradient={false}
+      >
         {randomCards.map((card) => {
           console.log(card.title, card.text); 
 
