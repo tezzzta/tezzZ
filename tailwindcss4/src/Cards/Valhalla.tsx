@@ -4,8 +4,8 @@ import styles from "./Valhalla.module.css"
 
 const Taiwan = () => {
     return(
-        <div className={styles.container}>
-             <div className={styles.bckg}>
+        <div className={styles.container }>
+             <div className={styles.bckg }>
                   <Thor/>
              </div>
         </div>

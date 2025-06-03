@@ -17,7 +17,7 @@
 }
 
 .projectImage {
-  width: 100%;
+  width: 90%;
   aspect-ratio: 16 / 9;
   background: var(--background-light);
   cursor: pointer;

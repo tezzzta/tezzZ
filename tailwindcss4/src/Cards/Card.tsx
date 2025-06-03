@@ -90,14 +90,14 @@ const StyledWrapper = styled.div`
 
 const projects: Valhala[] =[
     {
-        title: "B-Train ",
+        title: "B-Trained ",
         subtitle: " React, ExpressJs, SQL, Framer-Motion, TypeScript",
         description: "Un Foro eduactivo interactivo, que propone una solución interactiva y con asistencia de IA para la creación de formularios y evaluaciones, se encuentra en desarrollo pero puedes revisarlo acá.",
         imageUrl: "/Photos/B-train.jpeg", 
         github: "https://github.com/tomas223-gr/Foro-educativo",
       },
       {
-        title: "Sanatización y Validación  ",
+        title: "Validación de entradas",
         subtitle: "Node.JS, JavasScript, SQL, JSONWebToken",
         description: "Se implementa Sanitización y Validación de un sitio web en desarrollo, para evitar ataques de inyección SQL y XSS, se encuentra en desarrollo pero puedes revisarlo acá.",
         imageUrl: "/Photos/Back.jpeg",
