@@ -166,7 +166,7 @@ const Porta = () => {
                 <h1 className={styles.TitleContainer}> Proyectos </h1>
             </div>
 
-             <div className={styles.cardsContainer}>
+             <div className={styles.cardsContainer + ""}>
                 {projects.map((projects, index)  => (
                     <ProjectImage key={index} {...projects} />
                 ))}

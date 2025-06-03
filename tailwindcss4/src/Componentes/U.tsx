@@ -13,7 +13,7 @@ const Tercero = () => {
       
 
         <div 
-        className={styles.backg}>
+        className={styles.backg1}>
          
 
         <h1 className={styles.snt}> Tech Stack</h1>

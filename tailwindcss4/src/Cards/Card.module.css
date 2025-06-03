@@ -2,14 +2,14 @@
   display: grid;
   width: 100%;
   flex-wrap: wrap;
-  padding: 0% 17% 5% 28%;
+  padding: 0% 1% 5% 15%;
   gap: 1rem;
 }
 
 .fondo {
   background: #272525;
   height: 210px;
-  width: 110%;
+  width: 70%;
   margin-bottom: 10px;
   margin-top: 15px;
   overflow: hidden;
@@ -76,7 +76,8 @@
 
 .TitleContainer {
   color: white;
-  font-weight: 750;
+  font-family: sans-serif;
+  font-weight: semibold;
   display: flex;
   margin-top: 65px;
   justify-content: center;
