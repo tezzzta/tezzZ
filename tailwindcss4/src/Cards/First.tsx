@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export const First = () => {
   const listRef = useRef<HTMLUListElement | null>(null);
   const [actual, setActual] = useState(0);
-    const [actualStr, setActualStr] = useState('');
+    // const [actualStr, setActualStr] = useState('');
 
 
   useEffect(() => {
