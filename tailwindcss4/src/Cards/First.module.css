@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+.backg{
+    background: #111;
+    height: 100vh;
+    width: 100vw;
+    padding: 0px;
+    
+}
+
+.divinicial{
+    
+    display: grid;
+    grid-column: 1;
+    padding: 10px;
+    align-items: start;
+    justify-content: center;
+    text-align:center;
+}
+
+
+.button{
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+        text-align:center;
+
+}
+.texto{
+    margin:auto;
+    font-size: 32px;
+    color: #fff;
+}
+
+.divisecundario{
+    margin: auto;
+    padding: 10px;
+}
+.img{
+    margin:auto;
+}

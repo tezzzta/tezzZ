@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "./Card.module.css";
-
+import { Link } from "react-router-dom";
+import accessImg from "../Assets/access.jpg"
 
 //acá aremos un buttom, pos YoeCode dijo que asi se ve mejor 
 import styled from 'styled-components';
 
-const Button: React.FC<Odin> = ({github}) => {
+export const Button: React.FC<Odin> = ({github}) => {
   const handleClick = () => {
     window.open(github, "_blank"); // abre en una nueva pestaña
   };
@@ -22,6 +23,29 @@ const Button: React.FC<Odin> = ({github}) => {
   );
 }
 
+
+export const AnotherButton: React.FC<Odin> = ({github}) => {
+  const handleClick = () => {
+    window.open(github, "_blank"); // abre en una nueva pestaña
+  };
+  return (
+
+    <StyledWrapper>
+      <button onClick={handleClick} className="Btn">
+        <span className="svgContainer">
+<svg
+  viewBox="0 0 320 512"
+  fill="white"
+  height="2em"
+>
+  <path d="M0 32L0 352l96-96 64 160 64-32-64-160h128L0 32z" />
+</svg>
+        </span>
+        <span className="BG" />
+      </button>
+    </StyledWrapper>
+  );
+}
 const StyledWrapper = styled.div`
   .Btn {
     width: 60px;
@@ -96,13 +120,15 @@ const projects: Valhala[] =[
         imageUrl: "/Photos/B-train.jpeg", 
         github: "https://github.com/tomas223-gr/Foro-educativo",
       },
+     
       {
-        title: "Validación de entradas",
-        subtitle: "Node.JS, JavasScript, SQL, JSONWebToken",
-        description: "Se implementa Sanitización y Validación de un sitio web en desarrollo, para evitar ataques de inyección SQL y XSS, se encuentra en desarrollo pero puedes revisarlo acá.",
-        imageUrl: "/Photos/Back.jpeg",
-        github: "https://github.com/tomas223-gr/Foro-educativo",
-      },
+     title: "Accest Fast",
+    description: "Una aplicacion de Android con soporte para web para gestionar el acceso rápido a sitios privados, automatizando la recolección de información y asimismo brindando herramientas de chequeo al administrador del sitio.",
+    imageUrl: accessImg,
+    subtitle: "Expo ReactNative Zustand Supabase NativeWind TypeScript",
+    github: "https://github.com/tezzzta/codeAcces",
+    // link: "https://access-fast.vercel.app/login"
+  }
       
 ]
 
@@ -141,7 +167,7 @@ const ProjectImage: React.FC<Valhala> = ({title, subtitle, description, imageUrl
     </div>
         </div> 
       <div>
-        <h2 className={styles.projects_title__J6lF1}>{title}</h2>
+        <h2 className="text-white font-semibold text-[22px]">{title}</h2>
         <p className={styles.projects_subtitle__2c1g0}>{subtitle}</p>
         <p className={styles.projectsdescriptionW9r7B}>{description}</p>
         <div>
@@ -162,15 +188,23 @@ const ProjectImage: React.FC<Valhala> = ({title, subtitle, description, imageUrl
 const Porta = () => {
         return(
            <div>
-            <div >
-                <h1 className={styles.TitleContainer}> Proyectos </h1>
+            <div className="grid grid-cols-1">
+                <h1 className="m-auto text-[40px] font-bold text-white"> Proyectos </h1>
             </div>
 
              <div className={styles.cardsContainer + ""}>
                 {projects.map((projects, index)  => (
                     <ProjectImage key={index} {...projects} />
                 ))}
+
             </div>
+                 <Link to='/project'>
+                             <div className="grid grid-cols-1"> 
+
+                        <button className="m-[10%] lg:m-auto text-[32px] font-bold text-white bg-[linear-gradient(45deg,_#1e3a8a,_#9333ea)]  p-4 px-2 rounded" > Descubre más proyectos </button>
+                   </div>
+                </Link>
+
            </div>
         )
 

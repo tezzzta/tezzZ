@@ -1,8 +1,11 @@
 import { useEffect } from 'react'
 import Componente from './Componentes/Principal.tsx'
 import Second from './Componentes/Second.tsx'
+import {First} from './Cards/First.tsx'
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
 
-function App() {
+
+function Home() {
   useEffect(() => {
     const preventZoom = (event: WheelEvent) => {
       if (event.ctrlKey) {
@@ -39,4 +42,16 @@ function App() {
   )
 }
 
+
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project" element={<First />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 export default App

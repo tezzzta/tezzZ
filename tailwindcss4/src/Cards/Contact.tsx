@@ -1,5 +1,11 @@
 import styles from "./Contact.module.css"
 import Buffon from "./Buffon";
+
+
+
+
+
+
 const FirstCard = () => {
     return(
         <div className={styles.texto}>
@@ -21,7 +27,7 @@ const ContactMe = () => {
                 
                 
             </div>
-            <div className="bg-[#111111] display grid justify-center items-center h-screen mt-10">
+            <div className="bg-[#111111] display grid justify-center items-center h-auto mt-1">
                 <Buffon/>
                 </div>
         </div>

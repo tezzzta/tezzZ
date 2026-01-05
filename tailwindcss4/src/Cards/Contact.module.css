@@ -65,7 +65,7 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: animate 8s linear infinite;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     text-align: center;
     width: 100%;
   }
