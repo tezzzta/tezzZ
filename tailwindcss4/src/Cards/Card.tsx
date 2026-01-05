@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Card.module.css";
 import { Link } from "react-router-dom";
-import accessImg from "../Assets/access.jpg"
+import accessImg from "../assets/access.jpg"
 
 //acá aremos un buttom, pos YoeCode dijo que asi se ve mejor 
 import styled from 'styled-components';
